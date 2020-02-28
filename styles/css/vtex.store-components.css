@@ -1,0 +1,214 @@
+.notificationBarContainer {
+  background-color: #FFF; 
+  color: #03034E;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1025px) 
+{
+  .notificationBarContainer {
+    background-color: #FFF; 
+    color: #03034E;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  
+  .searchBarContainer {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: content-box;
+    border-radius: 25px;
+    height: 29px;
+    margin-top: -35px;
+    width: 93%;
+  }
+
+  .searchBarContainer--searchBar-mobile {
+    background: blue;
+  }
+  
+  .searchBarInnerContainer {
+    width: 98%;
+    margin-left: 20px;
+    bottom: 5px;
+    border: none;
+  }
+  
+  .searchBarInnerContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: -3px;
+  }
+  
+  .autoCompleteOuterContainer {
+    width: inherit;
+  }
+  
+  .logoImage {
+    padding: 0px;
+    margin-top: 5px;
+  }
+  
+  .searchIcon {
+    color: #F8991F;
+  }
+}
+
+@media only screen and (min-width: 1026px) 
+{
+
+  .logoLink {
+    width: inherit;
+    margin-top: -35px;
+  }
+
+  .notificationContent{
+    display: flex;;
+  }
+  .notificationBarInner::before {
+    content: "";
+    display: flex;
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='4' viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='4' fill='%23F8991F'/%3E%3C/svg%3E");
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-right: 15px;
+    background-size: contain;
+  }
+  .notificationContent::before {
+    content: "";
+    display: flex;;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.7105 4.35502C14.5181 1.75632 11.6021 0.324829 8.49998 0.324829C5.39788 0.324829 2.48188 1.75632 0.289515 4.35502C-0.0965049 4.81268 -0.0965049 5.55691 0.289515 6.01458L1.92291 7.95052C2.30757 8.40508 2.98694 8.40508 3.37156 7.95052C3.91878 7.30221 4.53935 6.76853 5.21457 6.36622C5.55287 6.16937 5.77148 5.75571 5.76873 5.36511L6.01503 3.26701C7.82204 2.61597 9.19668 2.61638 10.9857 3.26663L11.2292 5.31253C11.2292 5.755 11.4375 6.15889 11.7779 6.36977C12.4558 6.77404 13.0771 7.30775 13.6243 7.95565C13.816 8.18371 14.0733 8.30886 14.3486 8.30886C14.624 8.30886 14.8814 8.18371 15.073 7.95606L16.7105 6.01465C17.0965 5.55687 17.0965 4.81268 16.7105 4.35502Z' fill='%23F8991F'/%3E%3Cpath d='M13.1086 7.76847C12.8001 7.11668 12.2011 6.71201 11.546 6.71201H5.45463C4.79956 6.71201 4.20051 7.11668 3.89199 7.76847L1.62521 12.5592C1.48894 12.8477 1.41699 13.1724 1.41699 13.4984V16.2927C1.41699 17.1734 2.0527 17.8895 2.83367 17.8895H14.167C14.948 17.8895 15.5837 17.1734 15.5837 16.2927V13.4983C15.5837 13.1724 15.5117 12.8477 15.3755 12.5588L13.1086 7.76847ZM6.37462 15.4943C5.98379 15.4943 5.6663 15.1361 5.6663 14.696C5.6663 14.2559 5.98382 13.8976 6.37462 13.8976C6.76545 13.8976 7.08294 14.2559 7.08294 14.696C7.08298 15.1361 6.76545 15.4943 6.37462 15.4943ZM6.37462 13.0992C5.98379 13.0992 5.6663 12.7409 5.6663 12.3008C5.6663 11.8607 5.98382 11.5024 6.37462 11.5024C6.76545 11.5024 7.08294 11.8607 7.08294 12.3008C7.08298 12.7409 6.76545 13.0992 6.37462 13.0992ZM6.37462 10.704C5.98379 10.704 5.6663 10.3457 5.6663 9.90561C5.6663 9.46549 5.98382 9.10722 6.37462 9.10722C6.76545 9.10722 7.08294 9.46549 7.08294 9.90561C7.08298 10.3457 6.76545 10.704 6.37462 10.704ZM8.50032 15.4943C8.10948 15.4943 7.792 15.1361 7.792 14.696C7.792 14.2559 8.10952 13.8976 8.50032 13.8976C8.89112 13.8976 9.20864 14.2559 9.20864 14.696C9.20864 15.1361 8.89115 15.4943 8.50032 15.4943ZM8.50032 13.0992C8.10948 13.0992 7.792 12.7409 7.792 12.3008C7.792 11.8607 8.10952 11.5024 8.50032 11.5024C8.89112 11.5024 9.20864 11.8607 9.20864 12.3008C9.20864 12.7409 8.89115 13.0992 8.50032 13.0992ZM8.50032 10.704C8.10948 10.704 7.792 10.3457 7.792 9.90561C7.792 9.46549 8.10952 9.10722 8.50032 9.10722C8.89112 9.10722 9.20864 9.46549 9.20864 9.90561C9.20864 10.3457 8.89115 10.704 8.50032 10.704ZM10.6246 15.4943C10.2338 15.4943 9.9163 15.1361 9.9163 14.696C9.9163 14.2559 10.2338 13.8976 10.6246 13.8976C11.0155 13.8976 11.3329 14.2559 11.3329 14.696C11.333 15.1361 11.0155 15.4943 10.6246 15.4943ZM10.6246 13.0992C10.2338 13.0992 9.9163 12.7409 9.9163 12.3008C9.9163 11.8607 10.2338 11.5024 10.6246 11.5024C11.0155 11.5024 11.3329 11.8607 11.3329 12.3008C11.333 12.7409 11.0155 13.0992 10.6246 13.0992ZM10.6246 10.704C10.2338 10.704 9.9163 10.3457 9.9163 9.90561C9.9163 9.46549 10.2338 9.10722 10.6246 9.10722C11.0155 9.10722 11.3329 9.46549 11.3329 9.90561C11.333 10.3457 11.0155 10.704 10.6246 10.704Z' fill='%23F8991F'/%3E%3C/svg%3E");
+    width: 18px;
+    margin-right: 15px;
+    background-size: contain;
+  }
+  .notificationContent::after {
+    content: "";
+    display: flex;
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='4' viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='4' fill='%23F8991F'/%3E%3C/svg%3E");
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
+    background-size: contain;
+  }
+  .searchBarContainer :global(.vtex-input-prefix__group) {
+    width: 706px;
+    height: 44px;
+    left: 578px;
+    top: 52px;
+    margin-left: 10px;
+    margin-top: 5px;
+  
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+  .searchIcon {
+    color: #FFF;
+  }
+  
+  .searchBarContainer :global(.vtex-input__prefix) {
+    background: #2C296A;
+    border-radius: 0px 25px 25px 0px;
+  }
+
+  .searchBarInnerContainer {
+    margin-left: 20px; 
+  }
+
+  .headerRow--menu-link {
+    margin: 10px;
+  }
+}
+
+
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #E6F1E6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #03054E;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}

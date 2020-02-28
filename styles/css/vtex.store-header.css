@@ -1,0 +1,64 @@
+@media only screen and (min-width: 1026px) 
+{
+  .headerRowBackground {
+    background-color: #FFF;
+  }
+
+  .headerRow--menu-contato::before {
+    content: '';
+    background-image: url('/arquivos/telephone_img.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .headerStickyRow {
+    margin: 0 auto;
+  }
+  
+  .headerRowContainer--main-header {
+    background-color: #FFF;
+  }  
+}
+
+@media only screen and (max-width: 1025px)
+{
+  .headerRow :global(.vtex-menu-2-x-styledLink) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+     color: #FFF;
+  }
+  
+  .headerRow--main-header .headerRowBackground {
+    background-color: #F0F0F0;
+  }
+  
+  .headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
+    width: 82px;
+      height: 15px;
+      left: 1311px;
+      top: 45px;
+  
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #F8991F;
+  }
+  
+  .headerRow--main-header-mobile .headerRowBackground {
+    background-color: #FFF;
+    padding: 0px;
+    height: 140px;
+  }
+
+  .headerRowContainer--main-header-mobile {
+    justify-content: space-between;
+  }
+}
+
+
